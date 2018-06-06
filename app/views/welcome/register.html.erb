@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Choose realtor, lender and title company for best rewards</title>
+</head>
+<body>
+
+<div class="container bg-dk-gray">
+  <div class="header-image">
+    <picture>
+      <source media="(max-width: 600px)" srcset="/Content/Images/V2/header-ram-mobile.jpg">
+      <%= image_tag "register_1024_1.png" %>
+    </picture>
+    <div class="header-scroll-overlay-container">
+      <div id="header-scroll-overlay" class="text-center">
+        <p>SCROLL TO SEE MORE<br /><%= image_tag "chevrons.png" %></p>
+      </div>
+    </div>
+  </div>
+
+  <form action="https://HomePathRewards.com/Home/Register" method="post" role="form">    <div class="reg-content">
+    <div class="row no-margin">
+      <div class="col-xs-12 text-center">
+        <h1 class="orange">GET UP TO $500 IN THE MAIL</h1>
+        <p class="color light">Submit the application below within 60 days of purchasing or leasing your new vehicle to get your check!</p>
+        <p class="color light">To find out how much you qualify for, visit the 'Choose My Perfect Home' section and enter your vehicle type.</p>
+        <p class="light">Complete all information accurately. Information you provide is subject to a validation process to confirm the vehicle purchase or lease and your HomePathRewards eligibility. Once your application is successfully submitted, you'll receive a check in the mail in approximately 8 - 10 weeks from approval and processing.</p>
+      </div>
+    </div>
+    <div class="row no-margin top-margin text-center">
+      <div class="col-sm-12">
+        <p>Submit the application <a href="../Content/Bonus_Drive_Form_With_Survey.pdf" target="_blank"> by mail</a></p>
+        <p>For Allstate applications, <a href="http://allstate.HomePathRewards.com/">click here</a></p>
+        <p>For Nationwide applications, <a href="http://nationwide.HomePathRewards.com/">click here</a></p>
+      </div>
+
+    </div>
+    <div class="row no-margin top-margin text-center">
+      <div class="col-xs-12 bg-md-gray reg-warning">
+        <p><span class="warning-icon">*</span> Contact information entered below <span style="text-decoration:underline;">must</span> match the information shown on your dealership purchase or lease agreement, cosigner information will not be accepted.</p>
+      </div>
+    </div>
+
+    <div class="row top-margin">
+      <div class="col-xs-12 col-sm-6"><label for="FirstName">FIRST NAME</label><input data-val="true" data-val-required="Enter your first name" id="FirstName" name="FirstName" type="text" value="" /><span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span></div>
+      <div class="col-xs-8 col-sm-4"><label for="LastName">LAST NAME</label><input data-val="true" data-val-required="Enter your last name" id="LastName" name="LastName" type="text" value="" /><span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span></div>
+      <div class="col-xs-4 col-sm-2"><label for="Age">AGE</label><input id="Age" name="Age" onkeypress="return isNumber(event)" type="number" value="" /></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6"><label for="Email">EMAIL</label><input data-val="true" data-val-email="Enter a valid email" data-val-required="Enter your email" id="Email" name="Email" type="email" value="" /><span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span></div>
+      <div class="col-xs-12 col-sm-6"><label for="ConfirmEmail">CONFIRM EMAIL</label><input data-val="true" data-val-email="Enter a valid email" data-val-equalto="Email and confirmation email must match" data-val-equalto-other="*.Email" id="ConfirmEmail" name="ConfirmEmail" type="email" value="" /><span class="field-validation-valid" data-valmsg-for="ConfirmEmail" data-valmsg-replace="true"></span></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12"><label for="Address">ADDRESS</label><input data-val="true" data-val-required="Enter your address" id="Address" name="Address" onclick="geolocate()" placeholder="" type="text" value="" /><span class="field-validation-valid" data-valmsg-for="Address" data-valmsg-replace="true"></span></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6"><label for="Address2">APARTMENT OR SUITE</label><input id="Address2" name="Address2" type="text" value="" /></div>
+      <div class="col-xs-12 col-sm-6"><label for="City">CITY</label><input data-val="true" data-val-required="Enter your city" id="City" name="City" type="text" value="" /><span class="field-validation-valid" data-valmsg-for="City" data-valmsg-replace="true"></span></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-6"><label for="State">STATE</label><select data-val="true" data-val-required="Enter your state" id="State" name="State"><option value=""></option>
+            <option>AK</option>
+            <option>AL</option>
+            <option>AR</option>
+            <option>AZ</option>
+            <option>CA</option>
+            <option>CO</option>
+            <option>CT</option>
+            <option>DC</option>
+            <option>DE</option>
+            <option>FL</option>
+            <option>GA</option>
+            <option>HI</option>
+            <option>IA</option>
+            <option>ID</option>
+            <option>IL</option>
+            <option>IN</option>
+            <option>KS</option>
+            <option>KY</option>
+            <option>LA</option>
+            <option>MA</option>
+            <option>MD</option>
+            <option>ME</option>
+            <option>MI</option>
+            <option>MN</option>
+            <option>MO</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>NC</option>
+            <option>ND</option>
+            <option>NE</option>
+            <option>NH</option>
+            <option>NJ</option>
+            <option>NM</option>
+            <option>NV</option>
+            <option>NY</option>
+            <option>OH</option>
+            <option>OK</option>
+            <option>OR</option>
+            <option>PA</option>
+            <option>RI</option>
+            <option>SC</option>
+            <option>SD</option>
+            <option>TN</option>
+            <option>TX</option>
+            <option>UT</option>
+            <option>VA</option>
+            <option>VT</option>
+            <option>WA</option>
+            <option>WI</option>
+            <option>WV</option>
+            <option>WY</option>
+          </select><span class="field-validation-valid" data-valmsg-for="State" data-valmsg-replace="true"></span></div>
+          <div class="col-xs-6"><label for="Zip">ZIP</label><input class="" data-val="true" data-val-required="Enter your zip code" id="Zip" name="Zip" type="text" value="" /><span class="field-validation-valid" data-valmsg-for="Zip" data-valmsg-replace="true"></span></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6"><label for="Phone">PHONE</label><input data-val="true" data-val-required="Enter your phone number" id="Phone" name="Phone" type="tel" value="" /><span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span></div>
+    </div>
+    <div class="row top-margin">
+      <input data-val="true" data-val-number="The field SubmissionID must be a number." data-val-required="The SubmissionID field is required." id="SubmissionID" name="SubmissionID" type="hidden" value="0" />
+      <p id="validationMessage" class="text-center red">There are validation errors. Please fix the errors and re-submit.</p>
+      <div class="col-xs-12 text-center"><input type="button" value="NEXT" onclick="validate()" /></div>
+    </div>
+    <div class="row margin-bottom-20 status-bar">
+      <div class="col-xs-12 text-center"><img src="../Content/Images/V2/progress-1.png" alt="" /></div>
+    </div>
+  </div>
+  </form>
+
+</div>
+
+</body>
+</html>

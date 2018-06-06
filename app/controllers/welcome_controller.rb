@@ -10,4 +10,7 @@ class WelcomeController < ApplicationController
 
   def choose
   end
+
+  def register
+  end
 end
