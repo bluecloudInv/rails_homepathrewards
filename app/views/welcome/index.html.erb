@@ -28,7 +28,6 @@
   <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" rel="stylesheet" />
   <!--<link href="app/assets/stylesheets/css7cd1.css?v=IgNPQ9lA98YTBRE3vz1HWoSIuhKi4ITcQ4EzRFvx9D01" rel="stylesheet"/>-->
   <!--<link href="app/assets/stylesheets/css7cd1.css" rel="stylesheet"/>-->
-  stylesheet_link_tag "css7cd1"
   <!--<script src="bundles/modernizr8fce?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>-->
   <!--<script src="bundles/jquery4b78?v=v76fAns59-4kGkYyDyEXyw9RgnmvJyXSd0eFBt05RzE1"></script>-->
 
@@ -44,14 +43,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><%= image_tag "logo_nav_h.png" %></a>
+      <%=link_to image_tag("logo_nav_h.png", border: 0) %>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="Home/EligibilitySearch.html">Am I Eligible</a></li>
         <li><a href="Home/Vehicles.html">Choose My Perfect Home</a></li>
         <li><a href="Home/Register.html">Get My Check</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><%= link_to "Contact", :anchor => "contact" %></li>
 
       </ul>
     </div>
