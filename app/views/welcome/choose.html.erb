@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Choose realtor, lender and title company for best rewards</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-image">
+    <picture>
+      <source media="(max-width: 600px)" srcset="/Content/Images/V2/header-ram-mobile.jpg">
+      <%= image_tag "jamr_carousal.jpg" %>
+    </picture>
+    <div class="header-scroll-overlay-container">
+      <div id="header-scroll-overlay" class="text-center">
+        <p>SCROLL TO SEE MORE<br /><%= image_tag "chevrons.png" %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row no-margin">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+      <div class="vehicle-content">
+        <h1 class="orange">CHOOSE YOUR PERFECT HOME</h1>
+        <p class="light">Search for eligible home from RBHome, Realtor®, HowardHanna®, Century21®, or KellerWilliams.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="vehicle-filter bg-lt-md-gray">
+    <div class="row no-margin">
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><label><strong>MANUFACTURER</strong></label></div>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkMake" id="ChkChrysler" name="ChkChrysler" type="checkbox" value="true" /><input name="ChkChrysler" type="hidden" value="false" /><label for="ChkChrysler">CHRYSLER</label></div>
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkMake" id="ChkDodge" name="ChkDodge" type="checkbox" value="true" /><input name="ChkDodge" type="hidden" value="false" /><label for="ChkDodge">DODGE</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkMake" id="ChkJeep" name="ChkJeep" type="checkbox" value="true" /><input name="ChkJeep" type="hidden" value="false" /><label for="ChkJeep">JEEP</label></div>
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkMake" id="ChkRam" name="ChkRam" type="checkbox" value="true" /><input name="ChkRam" type="hidden" value="false" /><label for="ChkRam">RAM</label></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkMake" id="ChkFiat" name="ChkFiat" type="checkbox" value="true" /><input name="ChkFiat" type="hidden" value="false" /><label for="ChkFiat">FIAT</label></div>
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkMake" id="ChkHyundai" name="ChkHyundai" type="checkbox" value="true" /><input name="ChkHyundai" type="hidden" value="false" /><label for="ChkHyundai">HYUNDAI</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vehicle-filter bg-lt-gray">
+    <div class="row no-margin">
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><label><strong>VEHICLE TYPE</strong></label></div>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkCategory" id="ChkCar" name="ChkCar" type="checkbox" value="true" /><input name="ChkCar" type="hidden" value="false" /><label for="ChkCar">CARS</label></div>
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkCategory" id="ChkTruck" name="ChkTruck" type="checkbox" value="true" /><input name="ChkTruck" type="hidden" value="false" /><label for="ChkTruck">TRUCKS</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkCategory" id="ChkSUV" name="ChkSUV" type="checkbox" value="true" /><input name="ChkSUV" type="hidden" value="false" /><label for="ChkSUV">SUVS &amp; CROSSOVERS</label></div>
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkCategory" id="ChkVan" name="ChkVan" type="checkbox" value="true" /><input name="ChkVan" type="hidden" value="false" /><label for="ChkVan">VANS</label></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="row">
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkCategory" id="ChkConvertible" name="ChkConvertible" type="checkbox" value="true" /><input name="ChkConvertible" type="hidden" value="false" /><label for="ChkConvertible">CONVERTIBLES</label></div>
+              <div class="col-xs-6 col-sm-12 equal filter-margin"><input class="input-checkbox chkCategory" id="ChkHybrid" name="ChkHybrid" type="checkbox" value="true" /><input name="ChkHybrid" type="hidden" value="false" /><label for="ChkHybrid">HYBRIDS &amp; ELECTRIC</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row no-margin">
+    <div class="col-sm-12 margin-top-30">
+      <div id="FCA-Message">
+        <p>SPECIAL HomePathRewards OFFERS:</p>
+        <p>All qualifying Fiat-Chrysler purchases (Chrysler, Dodge, Fiat, Jeep and Ram branded vehicles) receive $500 for any purchase made on or before March 31, 2018</p>
+        <p>All qualifying Fiat-Chrysler purchases made on or after the date of April 1, 2018 receive $250.  Purchaser must show 1) proof of ownership of a non Fiat-Chrylser vehicle in the household; OR 2) proof that the vehicle used at trade in was not a vehicle made by Fiat-Chrysler Automobiles.</p>
+      </div>
+      <div id="Hyundai-Message">
+        <p>SPECIAL HomePathRewards OFFERS:</p>
+        <p>All qualifying Hyundai purchases receive $500 except for any purchases made within the "Hyundai Circle" program; those buyers receive $100 back.</p>
+      </div>
+    </div>
+    <div class="col-sm-12" id="vehicle-results">
+
+
+
+    </div>
+  </div>
+
+  <a id="back-to-top" href="#" class="btn btn-primary btn-md back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+  <div class="vehicle-instructions bg-lt-gray">
+    <div class="row no-margin">
+      <div class="col-sm-12">
+        <ol>
+          <li><span class="li-style">Once you've found your perfect home, visit any realtor to negotiate your purchase or lease as normal.</span></li>
+          <li><span class="li-style">Return to HomePathRewards.com within 60 days and click on 'Get My Check'.</span></li>
+          <li><span class="li-style">Receive your check in the mail to spend on whatever you want!</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

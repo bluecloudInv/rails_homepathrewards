@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePathRewards</title>
+    <!--<title>HomePathRewards</title>-->
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -41,7 +41,8 @@
           <ul class="nav navbar-nav">
             <!--<li><a href="Home/EligibilitySearch.html">Am I Eligible</a></li>-->
             <li><%= link_to "Am I Eligible", :controller => :welcome, :action => :eligible %></li>
-            <li><a href="Home/Vehicles.html">Choose My Perfect Home</a></li>
+            <!--<li><a href="Home/Vehicles.html">Choose My Perfect Home</a></li>-->
+            <li><%= link_to "Choose My Perfect Home", :controller => :welcome, :action => :choose %></li>
             <li><a href="Home/Register.html">Get My Check</a></li>
             <li><%= link_to "Contact", :anchor => "contact" ,:controller => :welcome, :action => :index %></li>
           </ul>
