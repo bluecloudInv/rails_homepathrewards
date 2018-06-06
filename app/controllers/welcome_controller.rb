@@ -4,4 +4,10 @@ class WelcomeController < ApplicationController
 
   def contact
   end
+
+  def eligible
+  end
+
+  def choose
+  end
 end
