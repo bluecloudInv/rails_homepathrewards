@@ -35,16 +35,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%=link_to image_tag("logo_nav_h.png", border: 0), :controller => :welcome, :action => :index %>
+          <%=link_to image_tag("logo_nav_h.png", border: 0), welcome_index_path %>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Am I Eligible", :controller => :welcome, :action => :eligible %></li>
-            <li><%= link_to "Choose My Perfect Home", :controller => :welcome, :action => :choose %></li>
-            <li><%= link_to "Get My Check", :controller => :welcome, :action => :register %></li>
-            <li><%= link_to "Contact", :anchor => "contact" ,:controller => :welcome, :action => :index %></li>
+            <li><%= link_to "Am I Eligible", welcome_eligible_path %></li>
+            <li><%= link_to "Get My Check", welcome_register_path %></li>
+            <!--<li><%= link_to "Login", welcome_choose_path %></li>-->
+            <% if user_signed_in? %>
+              <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+              <!--<li>Logged in as <%= current_user.email %></li>-->
+            <% else %>
+              <!--<li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>-->
+              <li><%= link_to "Login", user_session_path, :class => 'navbar-link'  %></li>
+            <% end %>
           </ul>
         </div>
+        <!--<div>
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+        </div>-->
       </div>
     </div>
 

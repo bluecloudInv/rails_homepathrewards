@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Choose realtor, lender and title company for best rewards</title>
+</head>
+<body>
+
+<div class="container bg-dk-gray">
+  <div class="header-image">
+    <picture>
+      <source media="(max-width: 600px)" srcset="/Content/Images/V2/header-ram-mobile.jpg">
+      <%= image_tag "signup.png" %>
+    </picture>
+    <div class="header-scroll-overlay-container">
+      <div id="header-scroll-overlay" class="text-center">
+        <p>SCROLL TO SEE MORE<br /><%= image_tag "chevrons.png" %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row no-margin">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+      <div class="vehicle-content">
+        <h1 class="orange">CHOOSE YOUR PERFECT HOME</h1>
+        <p class="light orange">Search for eligible home from RBHome, Realtor®, HowardHanna®, Century21®, or KellerWilliams.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+    <p class="notice orange"><%= notice %></p>
+    <p class="alert orange"><%= alert %></p>
+  </div>
+
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+      <div class="vehicle-content">
+      <h2 class="orange">Log in</h2>
+              <br>
+
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="field orange">
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true, autocomplete: "email",:maxlength => 15, :size => 60 %>
+            </div>
+
+            <div class="field orange">
+            <%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "off",:maxlength => 15, :size => 60 %>
+            </div>
+
+            <% if devise_mapping.rememberable? -%>
+              <div class="field orange">
+                <%= f.check_box :remember_me %>
+                <%= f.label :remember_me %>
+              </div>
+            <% end -%>
+            <br>
+            <%= f.submit "Log in" %><br>
+        <% end %>
+        <br>
+        <%= render "users/shared/links" %>
+      </div>
+    </div>
+
+  <div class="row no-margin">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+      <div class="vehicle-content">
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -11,6 +11,15 @@ class WelcomeController < ApplicationController
   def choose
   end
 
+  def setup
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
   def register
   end
 end
